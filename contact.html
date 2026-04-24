@@ -1,99 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
 
-<!-- 🔝 NAVBAR -->
 <header>
-  <a href="index.html">
-  <img src="logo.jpg" class="logo-img" alt="EMI Logo">
-</a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html" class="active">Contact</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="terms.html">Terms</a>
-  </nav>
+<a href="index.html"><img src="logo.jpg" class="logo-img"></a>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html" class="active">Contact</a>
+<a href="privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+</nav>
 </header>
 
 <section class="hero">
-  <h1>Contact Us</h1>
-  <p>Let’s connect and grow together</p>
+<h1>Contact Us</h1>
 </section>
 
-<!-- 📞 CONTACT SECTION -->
 <section class="contact-section">
-  <div class="contact-container">
+<div class="contact-container">
 
-    <!-- LEFT INFO -->
-    <div class="contact-info">
-      <h2>Get in Touch</h2>
+<div class="contact-form">
+<form action="https://formsubmit.co/info@emimumbai.com" method="POST">
 
-      <p><strong>Email:</strong><br>
-      info@emimumbai.com
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<input type="tel" name="phone" placeholder="Phone" required>
+<textarea name="message" placeholder="Message" required></textarea>
 
-      <p><strong>Phone:</strong><br>
-      +91 90813 93737</p>
+<input type="hidden" name="_next" value="https://emimumbai.com/thankyou.html">
 
-      <p><strong>Location:</strong><br>
-      Mumbai, India</p>
-
-      <p><strong>Working Hours:</strong><br>
-      Mon - Sat : 10:00 AM – 7:00 PM</p>
-    </div>
-
-    <!-- RIGHT FORM -->
-    <div class="contact-form">
-      <h2>Send Message</h2>
-<form action="https://formsubmit.co/sanghviinfotechforemi@gmail.com" method="POST">
-
-  <input type="text" name="name" placeholder="Your Name" required>
-
-  <input type="email" name="email" placeholder="Your Email" required>
-
-  <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" title="Enter 10 digit number" required>
-
-  <input type="text" name="subject" placeholder="Subject">
-
-  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-
-  <!-- Hidden settings -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_subject" value="New EMI Inquiry 📩">
-  <input type="hidden" name="_next" value="https://emimumbai.com/thankyou.html">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_autoresponse" value="Thank you for contacting EMI. We will get back to you soon.">
-
-  <button type="submit">Send Message</button>
+<button type="submit">Send</button>
 
 </form>
-</form>
-    </div>
+</div>
 
-  </div>
+</div>
 </section>
 
-<!-- 🗺️ MAP -->
-<section class="map">
-  <iframe 
-    src="https://maps.google.com/maps?q=Mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</section>
-
-<!-- 🔻 FOOTER -->
-<footer>
-  <p>© 2026 EMI – Ethnic Manufacturers of India</p>
-</footer>
+<footer>© EMI</footer>
 
 </body>
 </html>
