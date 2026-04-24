@@ -36,14 +36,26 @@ nav a:hover,
   color: #38bdf8;
 }
 
-/* HERO (FINAL FIX WITH bg.jpg) */
+/* HERO COMMON */
+.hero {
+  height: 60vh;
+  background:
+    linear-gradient(rgba(2,6,23,0.7), rgba(2,6,23,0.7)),
+    url('/bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .hero-home {
   height: 95vh;
-background: url('/bg.jpg') center/cover no-repeat;
+  background:
+    linear-gradient(rgba(2,6,23,0.7), rgba(2,6,23,0.3)),
+    url('/bg.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   padding-left: 8%;
-  position: relative;
 }
 
 .hero-content {
@@ -61,6 +73,7 @@ background: url('/bg.jpg') center/cover no-repeat;
   margin-bottom: 20px;
 }
 
+/* BUTTON */
 .btn {
   padding: 12px 25px;
   background: #38bdf8;
@@ -84,29 +97,19 @@ background: url('/bg.jpg') center/cover no-repeat;
   margin: auto;
 }
 
-/* GALLERY */
-.gallery {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap: 15px;
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
-.gallery img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
+.card {
+  flex: 1;
+  background: #020617;
+  padding: 25px;
   border-radius: 12px;
-  transition: 0.4s;
-}
-
-.gallery img:hover {
-  transform: scale(1.08);
 }
 
 /* STATS */
@@ -122,23 +125,7 @@ background: url('/bg.jpg') center/cover no-repeat;
 }
 
 .stats h2 {
-  font-size: 36px;
   color: #38bdf8;
-}
-
-/* CARDS */
-.cards {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-
-.card {
-  flex: 1;
-  background: #020617;
-  padding: 25px;
-  border-radius: 12px;
 }
 
 /* CONTACT */
@@ -166,8 +153,8 @@ background: url('/bg.jpg') center/cover no-repeat;
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
-  border: none;
   border-radius: 6px;
+  border: none;
   background: #020617;
   color: #fff;
 }
@@ -181,20 +168,8 @@ footer {
 
 /* MOBILE */
 @media(max-width:768px) {
-  header {
-    padding: 15px 20px;
-  }
-
-  .hero-content h1 {
-    font-size: 32px;
-  }
-
-  .stats-grid {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .cards {
-    flex-direction: column;
-  }
+  header { padding: 15px; }
+  .hero-content h1 { font-size: 32px; }
+  .cards { flex-direction: column; }
+  .stats-grid { flex-direction: column; gap: 20px; }
 }
