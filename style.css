@@ -113,12 +113,14 @@ nav a:hover,
 
 /* HERO */
 .hero {
-  height: 60vh;
+ height: 95vh;
+  background: 
+    linear-gradient(to right, rgba(2,6,23,0.7), rgba(2,6,23,0.3)),
+    url('bg.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  text-align: center;
+  padding-left: 8%;
+  position: relative;
 }
 .hero-home {
   height: 95vh;
