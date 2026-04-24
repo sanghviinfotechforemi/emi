@@ -39,9 +39,7 @@ nav a:hover,
 /* HERO (FINAL FIX WITH bg.jpg) */
 .hero-home {
   height: 95vh;
-  background: 
-    linear-gradient(to right, rgba(2,6,23,0.7), rgba(2,6,23,0.3)),
-    url('bg.jpg') center/cover no-repeat;
+background: url('/bg.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   padding-left: 8%;
