@@ -37,24 +37,25 @@ nav a:hover,
 }
 
 /* HERO COMMON */
+/* ===== HERO (HOME ONLY WITH IMAGE) ===== */
 .hero-home {
+  height: 95vh;
+  background:
+    linear-gradient(to right, rgba(2,6,23,0.7), rgba(2,6,23,0.3)),
+    url('bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+/* ===== HERO (OTHER PAGES - NO IMAGE) ===== */
+.hero {
   height: 60vh;
-  background: #020617; /* plain dark */
+  background: #020617;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-}
-
-.hero {
-  height: 95vh;
-  background:
-    linear-gradient(rgba(2,6,23,0.7), rgba(2,6,23,0.3)),
-    url('/bg.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  padding-left: 8%;
 }
 
 .hero-content {
