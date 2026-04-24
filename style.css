@@ -37,7 +37,7 @@ nav a:hover,
 }
 
 /* HERO COMMON */
-.hero {
+.hero-home {
   height: 60vh;
   background: #020617; /* plain dark */
   display: flex;
@@ -47,7 +47,7 @@ nav a:hover,
 }
 }
 
-.hero-home {
+.hero {
   height: 95vh;
   background:
     linear-gradient(rgba(2,6,23,0.7), rgba(2,6,23,0.3)),
