@@ -39,13 +39,12 @@ nav a:hover,
 /* HERO COMMON */
 .hero {
   height: 60vh;
-  background:
-    linear-gradient(rgba(2,6,23,0.7), rgba(2,6,23,0.7)),
-    url('/bg.jpg') center/cover no-repeat;
+  background: #020617; /* plain dark */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
 }
 
 .hero-home {
